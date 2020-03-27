@@ -16,6 +16,20 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.(css)?$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(svg|png|jpg)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash].[ext]",
+            outputPath: "img"
+          }
+        }
       }
     ]
   },
