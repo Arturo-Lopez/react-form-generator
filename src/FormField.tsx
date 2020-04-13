@@ -12,7 +12,7 @@ export interface FormFieldProps extends FieldInputProps<""> {
 const FormField: React.FC<FormFieldProps> = ({
   label,
   type,
-  values,
+
   ...props
 }: FormFieldProps) => {
   const [field, meta] = useField(props);

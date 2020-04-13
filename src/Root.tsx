@@ -3,22 +3,19 @@ import React from "react";
 import Form from "./FormGenerator";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import * as Yup from "yup";
+import { FormDefinition } from "./type";
 
-interface FormProps {
-  firstName: string;
-  lastName: string;
-  email: string;
-}
-
-const formDefinition = {
+const formDefinition: FormDefinition = {
   fields: [
     {
       name: "firstName",
       label: "First name",
+      default: "Arturo",
     },
     {
-      name: "lastName",
-      label: "Last name",
+      name: "age",
+      type: "number",
+      label: "Edad",
     },
     {
       name: "email",
@@ -45,6 +42,12 @@ const formDefinition = {
           value: "no-gender",
         },
       ],
+    },
+    {
+      name: "disable",
+      label: "Habilitado",
+      type: "boolean",
+      default: true,
     },
   ],
   submitClickCallback: (values: any) => {
