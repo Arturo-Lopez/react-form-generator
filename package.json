@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.9.10",
+    "formik": "^2.1.4",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -18,7 +20,8 @@
     "redux": "^4.0.5",
     "styled-components": "^5.0.1",
     "typescript": "^3.8.3",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "yup": "^0.28.3"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
