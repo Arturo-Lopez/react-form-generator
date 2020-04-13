@@ -60,6 +60,7 @@ const formDefinition = {
       .max(50, "Too Long!")
       .required("Required"),
     email: Yup.string().email("Invalid email").required("Required"),
+    gender: Yup.string().required("Required"),
   }),
 };
 
